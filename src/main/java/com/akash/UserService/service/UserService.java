@@ -26,7 +26,7 @@ public class UserService {
 
         webClientBuilder.build()
                 .post()
-                .uri("http://localhost:8083/api/bill/save")
+                .uri("https://bill-service-6fnu.onrender.com/api/bill/save")
                 .bodyValue(request)
                 .retrieve()
                 .toBodilessEntity()
